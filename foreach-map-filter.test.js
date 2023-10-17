@@ -67,14 +67,14 @@ describe("#doubleValuesWithMap", function() {
   });
 });
 
-// describe("#valTimesIndex", function() {
-//   it("returns a new array with each value multiplied by the index", function() {
-//     expect(valTimesIndex([1, 2, 3])).toEqual([0, 2, 6]);
-//   });
-//   it("works for negative numbers", function() {
-//     expect(valTimesIndex([1, -2, -3])).toEqual([0, -2, -6]);
-//   });
-// });
+describe("#valTimesIndex", function() {
+  it("returns a new array with each value multiplied by the index", function() {
+    expect(valTimesIndex([1, 2, 3])).toEqual([0, 2, 6]);
+  });
+  it("works for negative numbers", function() {
+    expect(valTimesIndex([1, -2, -3])).toEqual([0, -2, -6]);
+  });
+});
 
 // describe("#extractKey", function() {
 //   it("returns a new array with the value of each key in an array objects", function() {
