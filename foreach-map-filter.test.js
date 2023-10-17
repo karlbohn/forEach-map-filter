@@ -24,23 +24,23 @@ describe("#showFirstAndLast", function() {
   });
 });
 
-// describe("#addKeyAndValue", function() {
-//   it("adds a key and value to an array of objects", function() {
-//     var arr = [
-//       { name: "Elie" },
-//       { name: "Tim" },
-//       { name: "Matt" },
-//       { name: "Colt" }
-//     ];
-//     var updatedArr = [
-//       { name: "Elie", title: "instructor" },
-//       { name: "Tim", title: "instructor" },
-//       { name: "Matt", title: "instructor" },
-//       { name: "Colt", title: "instructor" }
-//     ];
-//     expect(addKeyAndValue(arr, "title", "instructor")).toEqual(updatedArr);
-//   });
-// });
+describe("#addKeyAndValue", function() {
+  it("adds a key and value to an array of objects", function() {
+    var arr = [
+      { name: "Elie" },
+      { name: "Tim" },
+      { name: "Matt" },
+      { name: "Colt" }
+    ];
+    var updatedArr = [
+      { name: "Elie", title: "instructor" },
+      { name: "Tim", title: "instructor" },
+      { name: "Matt", title: "instructor" },
+      { name: "Colt", title: "instructor" }
+    ];
+    expect(addKeyAndValue(arr, "title", "instructor")).toEqual(updatedArr);
+  });
+});
 
 // describe("#vowelCount", function() {
 //   it("returns an object with the keys as vowels and the values as the count", function() {

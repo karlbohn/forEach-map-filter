@@ -4,20 +4,14 @@ function doubleValues(arr){
     });
 }
 
+
 function onlyEvenValues(arr){
     return arr.filter(function(num){
         return num % 2 === 0;
     })
 }
 
-/*
-Write a function called showFirstAndLast which accepts an array of strings and returns a new array with only the first and last character of each string.
 
-Examples:
-    showFirstAndLast(['colt','matt', 'tim', 'test']) // ["ct", "mt", "tm", "tt"]
-    showFirstAndLast(['hi', 'goodbye', 'smile']) // ['hi', 'ge', 'se']
-
-*/
 function showFirstAndLast(arr){
     let newArr = [];
     arr.forEach(function(word){
@@ -26,17 +20,12 @@ function showFirstAndLast(arr){
     return newArr;
 }
 
-/*
-Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and returns the array passed to the function with the new key and value added for each object 
 
-Examples:
-    addKeyAndValue([{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}], 'title', 'instructor') 
-    
-    // [{name: 'Elie', title:'instructor'}, {name: 'Tim', title:'instructor'}, {name: 'Matt', title:'instructor'}, {name: 'Colt', title:'instructor'}]
-
-*/
 function addKeyAndValue(arr,key,value){
-    
+    arr.forEach(function(name){
+        name[key] = value;
+    });
+    return arr;
 }
 
 /*
