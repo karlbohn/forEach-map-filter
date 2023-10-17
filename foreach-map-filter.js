@@ -1,14 +1,19 @@
 function doubleValues(arr){
-    return arr.map(function(num) {
-        return num * 2;
+    let newArr = [];
+    arr.forEach(function(num){
+        newArr.push(num*2);
     });
+    return newArr;
 }
 
-
 function onlyEvenValues(arr){
-    return arr.filter(function(num){
-        return num % 2 === 0;
-    })
+   let newArr = [];
+   arr.forEach(function(num){
+    if (num % 2 === 0){
+        newArr.push(num)
+    }
+   })
+   return newArr;
 }
 
 
@@ -28,16 +33,7 @@ function addKeyAndValue(arr,key,value){
     return arr;
 }
 
-/*
-Write a function called vowelCount which accepts a string and returns an object with the keys as the vowel and the values as the number of times the vowel appears in the string. This function should be case insensitive so a lowercase letter and uppercase letter should count
 
-Examples:
-    vowelCount('Elie') // {e:2,i:1};
-    vowelCount('Tim') // {i:1};
-    vowelCount('Matt') // {a:1})
-    vowelCount('hmmm') // {};
-    vowelCount('I Am awesome and so are you') // {i: 1, a: 4, e: 3, o: 3, u: 1};
-*/
 function vowelCount(str){
    const vowels = 'aeiou';
    const obj = {};
@@ -57,15 +53,12 @@ function vowelCount(str){
    return obj;
 }
 
-/*
-Write a function called doubleValuesWithMap which accepts an array and returns a new array with all the values in the array passed to the function doubled
 
-Examples:
-    doubleValuesWithMap([1,2,3]) // [2,4,6]
-    doubleValuesWithMap([1,-2,-3]) // [2,-4,-6]
-*/
-
-function doubleValuesWithMap(arr) {}
+function doubleValuesWithMap(arr) {
+    return arr.map(function(num) {
+        return num * 2;
+    });
+}
 
 /*
 Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.

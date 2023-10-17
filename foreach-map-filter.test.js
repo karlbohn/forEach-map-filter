@@ -1,11 +1,11 @@
-// describe("#doubleValues", function() {
-//   it("doubles values in an array", function() {
-//     expect(doubleValues([1, 2, 3])).toEqual([2, 4, 6]);
-//   });
-//   it("works for negative numbers", function() {
-//     expect(doubleValues([1, -2, -3])).toEqual([2, -4, -6]);
-//   });
-// });
+describe("#doubleValues", function() {
+  it("doubles values in an array", function() {
+    expect(doubleValues([1, 2, 3])).toEqual([2, 4, 6]);
+  });
+  it("works for negative numbers", function() {
+    expect(doubleValues([1, -2, -3])).toEqual([2, -4, -6]);
+  });
+});
 
 describe("#onlyEvenValues", function() {
   it("returns a new array of only even values", function() {
@@ -58,12 +58,12 @@ describe("#vowelCount", function() {
   });
 });
 
-describe("#doubleValues", function() {
+describe("#doubleValuesWithMap", function() {
   it("doubles values in an array", function() {
-    expect(doubleValues([1, 2, 3])).toEqual([2, 4, 6]);
+    expect(doubleValuesWithMap([1, 2, 3])).toEqual([2, 4, 6]);
   });
   it("works for negative numbers", function() {
-    expect(doubleValues([1, -2, -3])).toEqual([2, -4, -6]);
+    expect(doubleValuesWithMap([1, -2, -3])).toEqual([2, -4, -6]);
   });
 });
 
