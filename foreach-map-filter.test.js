@@ -7,11 +7,13 @@ describe("#doubleValues", function() {
   });
 });
 
+
 describe("#onlyEvenValues", function() {
   it("returns a new array of only even values", function() {
     expect(onlyEvenValues([1, 2, 3, 4, 5, 6])).toEqual([2, 4, 6]);
   });
 });
+
 
 describe("#showFirstAndLast", function() {
   it("returns an array of only the first and last characters in an array", function() {
@@ -23,6 +25,7 @@ describe("#showFirstAndLast", function() {
     ]);
   });
 });
+
 
 describe("#addKeyAndValue", function() {
   it("adds a key and value to an array of objects", function() {
@@ -42,6 +45,7 @@ describe("#addKeyAndValue", function() {
   });
 });
 
+
 describe("#vowelCount", function() {
   it("returns an object with the keys as vowels and the values as the count", function() {
     expect(vowelCount("elie")).toEqual({ e: 2, i: 1 });
@@ -58,6 +62,7 @@ describe("#vowelCount", function() {
   });
 });
 
+
 describe("#doubleValuesWithMap", function() {
   it("doubles values in an array", function() {
     expect(doubleValuesWithMap([1, 2, 3])).toEqual([2, 4, 6]);
@@ -67,6 +72,7 @@ describe("#doubleValuesWithMap", function() {
   });
 });
 
+
 describe("#valTimesIndex", function() {
   it("returns a new array with each value multiplied by the index", function() {
     expect(valTimesIndex([1, 2, 3])).toEqual([0, 2, 6]);
@@ -75,6 +81,7 @@ describe("#valTimesIndex", function() {
     expect(valTimesIndex([1, -2, -3])).toEqual([0, -2, -6]);
   });
 });
+
 
 describe("#extractKey", function() {
   it("returns a new array with the value of each key in an array objects", function() {
@@ -87,6 +94,7 @@ describe("#extractKey", function() {
     expect(extractKey(arr, "name")).toEqual(["Elie", "Tim", "Matt", "Colt"]);
   });
 });
+
 
 describe("#extractFulName", function() {
   var arr = [
@@ -105,6 +113,7 @@ describe("#extractFulName", function() {
   });
 });
 
+
 describe("#filterByValue", function() {
   var arr = [
     { first: "Elie", last: "Schoppik" },
@@ -120,6 +129,7 @@ describe("#filterByValue", function() {
   });
 });
 
+
 describe("#find", function() {
   var arr = [1, 2, 3, 4, 5];
   it("returns the first value found in an array", function() {
@@ -130,24 +140,26 @@ describe("#find", function() {
   });
 });
 
-// describe("#findInObj", function() {
-//   var arr = [
-//     { first: "Elie", last: "Schoppik" },
-//     { first: "Tim", last: "Garcia", isCatOwner: true },
-//     { first: "Matt", last: "Lane" },
-//     { first: "Colt", last: "Steele", isCatOwner: true }
-//   ];
-//   it("returns the first value found in an array", function() {
-//     expect(findInObj(arr, "isCatOwner", true)).toEqual({
-//       first: "Tim",
-//       last: "Garcia",
-//       isCatOwner: true
-//     });
-//   });
-//   it("returns undefined if the value is not found", function() {
-//     expect(findInObj(arr, "isCatOwner", false)).toEqual(undefined);
-//   });
-// });
+
+describe("#findInObj", function() {
+  var arr = [
+    { first: "Elie", last: "Schoppik" },
+    { first: "Tim", last: "Garcia", isCatOwner: true },
+    { first: "Matt", last: "Lane" },
+    { first: "Colt", last: "Steele", isCatOwner: true }
+  ];
+  it("returns the first value found in an array", function() {
+    expect(findInObj(arr, "isCatOwner", true)).toEqual({
+      first: "Tim",
+      last: "Garcia",
+      isCatOwner: true
+    });
+  });
+  it("returns undefined if the value is not found", function() {
+    expect(findInObj(arr, "isCatOwner", false)).toEqual(undefined);
+  });
+});
+
 
 // describe("#removeVowels", function() {
 //   it("removes all vowels from a string", function() {

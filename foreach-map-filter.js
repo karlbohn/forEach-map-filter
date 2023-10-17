@@ -96,14 +96,13 @@ function find(arr, searchValue) {
     return newArr[0];
 }
 
-/*
-Write a function called findInObj which accepts an array of objects, a key, and some value to search for and returns the first found value in the array.
 
-Examples:
-    findInObj([{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia", isCatOwner: true}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele", isCatOwner: true}], 'isCatOwner',true) // {first: 'Tim', last:"Garcia", isCatOwner: true}
-*/
-
-function findInObj(arr, key, searchValue) {}
+function findInObj(arr, key, searchValue) {
+    let newArr = arr.filter(function(obj){
+        return obj[key] === searchValue
+    })
+    return newArr[0];
+}
 
 /*
 Write a function called removeVowels which accepts a string and returns a new string with all of the vowels (both uppercased and lowercased) removed. Every character in the new string should be lowercased.
