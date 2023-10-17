@@ -13,16 +13,16 @@ describe("#onlyEvenValues", function() {
   });
 });
 
-// describe("#showFirstAndLast", function() {
-//   it("returns an array of only the first and last characters in an array", function() {
-//     expect(showFirstAndLast(["elie", "colt", "matt", "tim"])).toEqual([
-//       "ee",
-//       "ct",
-//       "mt",
-//       "tm"
-//     ]);
-//   });
-// });
+describe("#showFirstAndLast", function() {
+  it("returns an array of only the first and last characters in an array", function() {
+    expect(showFirstAndLast(["elie", "colt", "matt", "tim"])).toEqual([
+      "ee",
+      "ct",
+      "mt",
+      "tm"
+    ]);
+  });
+});
 
 // describe("#addKeyAndValue", function() {
 //   it("adds a key and value to an array of objects", function() {

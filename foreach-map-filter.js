@@ -4,14 +4,6 @@ function doubleValues(arr){
     });
 }
 
-/*
-Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
-
-Examples:
-    onlyEvenValues([1,2,3]) // [2]
-    onlyEvenValues([5,1,2,3,10]) // [2,10]
-
-*/
 function onlyEvenValues(arr){
     return arr.filter(function(num){
         return num % 2 === 0;
@@ -27,7 +19,11 @@ Examples:
 
 */
 function showFirstAndLast(arr){
-    
+    let newArr = [];
+    arr.forEach(function(word){
+        newArr.push(word[0] + word[word.length-1])
+    })
+    return newArr;
 }
 
 /*
