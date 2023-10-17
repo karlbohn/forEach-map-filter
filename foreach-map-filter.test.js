@@ -88,22 +88,22 @@ describe("#extractKey", function() {
   });
 });
 
-// describe("#extractFulName", function() {
-//   var arr = [
-//     { first: "Elie", last: "Schoppik" },
-//     { first: "Tim", last: "Garcia" },
-//     { first: "Matt", last: "Lane" },
-//     { first: "Colt", last: "Steele" }
-//   ];
-//   it("returns a new array with the value of each key in an array objects", function() {
-//     expect(extractFullName(arr, "name")).toEqual([
-//       "Elie Schoppik",
-//       "Tim Garcia",
-//       "Matt Lane",
-//       "Colt Steele"
-//     ]);
-//   });
-// });
+describe("#extractFulName", function() {
+  var arr = [
+    { first: "Elie", last: "Schoppik" },
+    { first: "Tim", last: "Garcia" },
+    { first: "Matt", last: "Lane" },
+    { first: "Colt", last: "Steele" }
+  ];
+  it("returns a new array with the value of each key in an array objects", function() {
+    expect(extractFullName(arr, "name")).toEqual([
+      "Elie Schoppik",
+      "Tim Garcia",
+      "Matt Lane",
+      "Colt Steele"
+    ]);
+  });
+});
 
 // describe("#filterByValue", function() {
 //   var arr = [
