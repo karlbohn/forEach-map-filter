@@ -105,20 +105,20 @@ describe("#extractFulName", function() {
   });
 });
 
-// describe("#filterByValue", function() {
-//   var arr = [
-//     { first: "Elie", last: "Schoppik" },
-//     { first: "Tim", last: "Garcia", isCatOwner: true },
-//     { first: "Matt", last: "Lane" },
-//     { first: "Colt", last: "Steele", isCatOwner: true }
-//   ];
-//   it("returns a new array of objects that contain a key", function() {
-//     expect(filterByValue(arr, "isCatOwner")).toEqual([
-//       { first: "Tim", last: "Garcia", isCatOwner: true },
-//       { first: "Colt", last: "Steele", isCatOwner: true }
-//     ]);
-//   });
-// });
+describe("#filterByValue", function() {
+  var arr = [
+    { first: "Elie", last: "Schoppik" },
+    { first: "Tim", last: "Garcia", isCatOwner: true },
+    { first: "Matt", last: "Lane" },
+    { first: "Colt", last: "Steele", isCatOwner: true }
+  ];
+  it("returns a new array of objects that contain a key", function() {
+    expect(filterByValue(arr, "isCatOwner")).toEqual([
+      { first: "Tim", last: "Garcia", isCatOwner: true },
+      { first: "Colt", last: "Steele", isCatOwner: true }
+    ]);
+  });
+});
 
 // describe("#find", function() {
 //   var arr = [1, 2, 3, 4, 5];
