@@ -120,15 +120,15 @@ describe("#filterByValue", function() {
   });
 });
 
-// describe("#find", function() {
-//   var arr = [1, 2, 3, 4, 5];
-//   it("returns the first value found in an array", function() {
-//     expect(find(arr, 3)).toEqual(3);
-//   });
-//   it("returns undefined if the value is not found", function() {
-//     expect(find(arr, 10)).toEqual(undefined);
-//   });
-// });
+describe("#find", function() {
+  var arr = [1, 2, 3, 4, 5];
+  it("returns the first value found in an array", function() {
+    expect(find(arr, 3)).toEqual(3);
+  });
+  it("returns undefined if the value is not found", function() {
+    expect(find(arr, 10)).toEqual(undefined);
+  });
+});
 
 // describe("#findInObj", function() {
 //   var arr = [
