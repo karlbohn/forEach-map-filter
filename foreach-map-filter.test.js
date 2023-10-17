@@ -169,9 +169,10 @@ describe("#removeVowels", function() {
   });
 });
 
-// describe("#doubleOddNumbers", function() {
-//   it("returns an array of all odd numbers doubled", function() {
-//     expect(doubleOddNumbers([1, 2, 3, 4, 5])).toEqual([2, 6, 10]);
-//     expect(doubleOddNumbers([4, 4, 4, 4, 4])).toEqual([]);
-//   });
-// });
+
+describe("#doubleOddNumbers", function() {
+  it("returns an array of all odd numbers doubled", function() {
+    expect(doubleOddNumbers([1, 2, 3, 4, 5])).toEqual([2, 6, 10]);
+    expect(doubleOddNumbers([4, 4, 4, 4, 4])).toEqual([]);
+  });
+});
